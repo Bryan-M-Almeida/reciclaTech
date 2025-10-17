@@ -24,14 +24,14 @@
         rel="stylesheet">
 </head>
 
-<body class="bg-green-300">
+<body class="bg-blue-500">
 
     <!-- Cabeçalho -->
     <header class="bg-gray-800">
         <nav
-            class="z-50 flex px-5 fixed top-0 pt-5 justify-center w-full border-b border-black pb-5 bg-gray-800 text-white gap-20 shadow-sm shadow-gray-300 left-0">
+            class="z-50 flex px-5 fixed top-0 pt-5 justify-center w-full border-b border-black pb-5 bg-gray-800 text-white gap-20 shadow-md shadow-black left-0">
             <div class="flex items-center gap-2">
-                <i class="fa-solid fa-recycle fa-2x text-green-600 transition cursor-pointer" id="logoAnimate"></i>
+                <i class="fa-solid fa-recycle fa-2x text-green-500 transition cursor-pointer" id="logoAnimate"></i>
                 <a href="" class="text-2xl hover:text-green-600 transition font-bold">ReciclaTech</a>
             </div>
             <div class="flex items-center justify-center gap-20">
@@ -43,7 +43,7 @@
                         class="text-xl hover:text-green-500 hover:border-b border-green-600 transition">Adquirir</a>
                 </div>
                 <a href=""
-                    class="bg-green-400 py-2 px-1 border border-green-600 rounded-md hover:text-gray-100 hover:bg-green-500 transition font-bold">Começar
+                    class="bg-green-400 py-2 px-1 border border-green-600 rounded-md hover:text-white hover:bg-green-500 transition font-bold text-black">Começar
                     agora</a>
             </div>
         </nav>
@@ -51,14 +51,17 @@
 
     <!-- Principal -->
     <main class="py-10">
-        <section id="hero" class="flex mx-10 items-center">
+
+        <section id="hero" class="flex mx-10 items-center justify-center">
             <div class="flex flex-col gap-2">
                 <div class="flex flex-col gap-2">
-                    <h1 class="text-6xl font-bold">Dê uma segunda vida
+                    <h1
+                        class="text-6xl font-bold shadow-md shadow-black p-2 rounded-md border border-black bg-blue-600">
+                        Dê uma <span class="text-green-500">segunda vida</span>
                         <br>
-                        aos seus eletrônicos!
+                        aos seus <span class="text-green-500">eletrônicos</span>!
                     </h1>
-                    <p class="text-center">Conectamos pessoas que querem doar eletrônicos em bom estado
+                    <p class="text-center text-xl">Conectamos pessoas que querem doar eletrônicos em bom estado
                         <br>
                         com quem precisa deles. Simples,
                         gratuito e sustentável!
@@ -66,14 +69,107 @@
                 </div>
                 <div class="flex justify-center gap-20">
                     <a href=""
-                        class="py-3 px-5 rounded-md text-white hover:bg-green-600 font-bold text-xl border border-green-600 bg-green-500 flex items-center gap-2">Quero
-                        doar<i class="fa-solid fa-gift text-2xl"></i></a>
+                        class="py-3 px-5 rounded-md text-white hover:bg-green-600 font-bold text-xl border border-green-600 bg-green-500 flex items-center gap-2 shadow-md shadow-gray-900">Quero
+                        doar<i class="fa-solid fa-gift text-2xl hover:text-red-600"></i></a>
                     <a href=""
-                        class="bg-white py-3 px-5 rounded-md text-blue-500 font-bold border border-blue-600 hover:bg-blue-500 hover:text-white transition flex items-center gap-2 text-xl">Quero
-                        Adquirir<i class="fa-solid fa-heart text-xl"></i></a>
+                        class="bg-white py-3 px-5 rounded-md text-blue-500 font-bold border border-blue-600 hover:bg-blue-500 hover:text-white transition flex items-center gap-2 text-xl shadow-md shadow-gray-900">Quero
+                        Adquirir<i class="fa-solid fa-heart text-xl hover:text-red-600"></i></a>
                 </div>
             </div>
             <img src="assets/logo.png" alt="" title="ReciclaTech">
+        </section>
+
+        <section id="dados" class="flex bg-white w-full justify-center py-10">
+            <div class=" flex justify-between gap-20">
+                <div class="flex flex-col items-center text-center">
+                    <h1 class="text-green-500 font-bold text-5xl">2.5k+</h1>
+                    <p class="text-xl">Eletrônicos doados</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <h1 class="text-green-500 font-bold text-5xl">1.8k+</h1>
+                    <p class="text-xl">Famílias beneficiadas</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <h1 class="text-green-500 font-bold text-5xl">95%</h1>
+                    <p class="text-xl">Satisfação dos usuários</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="comoFunciona" class="py-10 flex flex-col justify-center items-center">
+            <div class="flex flex-col items-center">
+                <h1 class="text-4xl font-bold">Como funciona?</h1>
+                <p class="text-xl">É mais fácil que trocar a pilha do controle!</p>
+            </div>
+
+            <div id="container" class="flex justify-between gap-5 py-10">
+                <!-- Card Doadores -->
+                <div class="flex border border-2 border-green-900 py-5 px-3 rounded-2xl flex-col gap-2 bg-green-500 hover:bg-green-600 transition duration-500"
+                    id="doadores">
+                    <div class="flex justify-start gap-2 items-center text-green-900">
+                        <i class="fa-solid fa-gift text-2xl"></i>
+                        <h2 class="text-xl font-bold">Para doadores</h2>
+                    </div>
+                    <p>Transforme seu "lixo eletrônico" no tesouro de alguém</p>
+                    <div class="flex flex-col gap-5 py-3">
+
+                        <div class="flex items-center gap-2">
+                            <h2 class="text-xl text-white bg-green-900 px-4 py-2 font-bold rounded-full">1</h2>
+                            <div>
+                                <h3 class="text-xl font-bold">Cadastre seu eletrônico</h3>
+                                <p class="text-white">Tire umas fotos, descreva o estado e pronto!</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <h2 class="text-xl text-white bg-green-900 px-4 py-2 font-bold rounded-full">2</h2>
+                            <div>
+                                <h3 class="text-xl font-bold">Aguarde o match</h3>
+                                <p class="text-white">Alguém vai se interessar pelo seu item</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <h2 class="text-xl text-white bg-green-900 px-4 py-2 font-bold rounded-full">3</h2>
+                            <div>
+                                <h3 class="text-xl font-bold">Combine a entrega</h3>
+                                <p class="text-white">Vocês decidem como fazer a entrega</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card adquirentes -->
+                <div class="flex border border-2 py-5 px-3 rounded-2xl flex-col gap-2 bg-blue-600 border-blue-900 hover:bg-blue-400 transition duration-500"
+                    id="adquirentes">
+                    <div class="flex justify-start gap-2 items-center text-blue-900">
+                        <i class="fa-solid fa-heart text-2xl"></i>
+                        <h2 class="text-xl font-bold">Para adquirentes</h2>
+                    </div>
+                    <p>Encontre o eletrônico dos seus sonhos de graça</p>
+                    <div class="flex flex-col gap-5 py-3">
+
+                        <div class="flex items-center gap-2">
+                            <h2 class="text-xl text-white bg-blue-900 px-4 py-2 font-bold rounded-full">1</h2>
+                            <div>
+                                <h3 class="text-xl font-bold">Demonstre interesse</h3>
+                                <p class="text-white">Clique em "Tenho interesse" no item</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <h2 class="text-xl text-white bg-blue-900 px-4 py-2 font-bold rounded-full">2</h2>
+                            <div>
+                                <h3 class="text-xl font-bold">Receba seu novo gadget</h3>
+                                <p class="text-white">Combine com o doador e seja feliz!</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <h2 class="text-xl text-white bg-blue-900 px-4 py-2 font-bold rounded-full">3</h2>
+                            <div>
+                                <h3 class="text-xl font-bold">Combine a entrega</h3>
+                                <p class="text-white">Vocês decidem como fazer a entrega</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
