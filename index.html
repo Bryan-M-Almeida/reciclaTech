@@ -22,88 +22,112 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Kanchenjunga:wght@400;500;600;700&family=Londrina+Outline&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body class="bg-blue-500">
+<body class="">
 
     <!-- Cabeçalho -->
-    <header class="bg-gray-800 py-5">
+    <header class="bg-gray-900 fixed w-full z-50 shadow-lg">
         <!-- Nav desktop -->
-        <nav
-            class="z-50 hidden md:flex px-5 fixed top-0 py-5 justify-center w-full border-b border-black  bg-gray-800 text-white gap-20 shadow-md shadow-black left-0">
-            <div class="flex items-center gap-2">
-                <i class="fa-solid fa-recycle fa-2x text-green-500 transition cursor-pointer" id="logoAnimate"></i>
-                <a href="" class="text-2xl hover:text-green-600 transition font-bold">ReciclaTech</a>
+        <nav class="hidden md:flex justify-between items-center max-w-7xl mx-auto px-6 py-4 text-white">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-recycle fa-2x text-green-500 transition transform hover:rotate-12 cursor-pointer"
+                    id="logoAnimate"></i>
+                <a href="#" class="text-2xl font-bold hover:text-green-500 transition">ReciclaTech</a>
             </div>
-            <div class="flex items-center justify-center gap-20">
-                <div class="flex gap-5">
-                    <a href="" class="text-xl hover:text-green-500 hover:border-b border-green-600 transition">Como
+            <div class="flex items-center gap-10">
+                <div class="flex gap-8">
+                    <a href="#comoFunciona"
+                        class="text-lg font-semibold transition hover:text-green-500 hover:border-b border-green-500">Como
                         funciona?</a>
-                    <a href="" class="text-xl hover:text-green-500 hover:border-b border-green-600 transition">Doar</a>
-                    <a href=""
-                        class="text-xl hover:text-green-500 hover:border-b border-green-600 transition">Adquirir</a>
+                    <a href="#contato"
+                        class="text-lg font-semibold transition hover:text-green-500 hover:border-b border-green-500">Doar</a>
+                    <a href="#produtos"
+                        class="text-lg font-semibold transition hover:text-green-500 hover:border-b border-green-500">Adquirir</a>
                 </div>
-                <a href=""
-                    class="bg-green-400 py-2 px-1 border border-green-600 rounded-md hover:text-white hover:bg-green-500 transition font-bold text-black">Começar
+                <a href="#start"
+                    class="bg-green-500 text-black font-bold py-2 px-4 rounded-md hover:bg-green-600 hover:text-white transition">Começar
                     agora</a>
             </div>
-            
-
+            <button class="btnDarkMode"><i class="fa-solid fa-moon iconeDarkMode"></i></button>
         </nav>
 
-        <!-- Nav Mobile -->
-        <nav class="md:hidden fixed z-50">
-            <div class="flex items-center gap-2 justify-around md:hidden fixed top-0 left-0 bg-gray-800  w-full py-5">
-                <div class="flex gap-2">
+        <!-- Nav mobile -->
+        <nav class="md:hidden">
+            <!-- Top bar -->
+            <div class="flex items-center justify-between px-6 py-4 transition-colors duration-300">
+                <div class="flex items-center gap-2">
                     <i class="fa-solid fa-recycle text-3xl text-green-500"></i>
-                    <h1 class="text-3xl text-green-500 font-bold">ReciclaTech</h1>
+                    <h1 class="text-2xl font-bold text-green-500">ReciclaTech</h1>
                 </div>
-                <i class="fa-solid fa-bars text-white text-4xl transition duration-500" id="menuMobile"></i>
-
+                <div class="flex items-center gap-4">
+                    <!-- Botão Dark Mode -->
+                    <button
+                        class="btnDarkMode text-white text-2xl p-2 rounded-full hover:bg-gray-700 dark:hover:bg-gray-600 transition">
+                        <i class="fa-solid fa-moon iconeDarkMode"></i>
+                    </button>
+                    <!-- Hamburger -->
+                    <i class="fa-solid fa-bars text-white text-3xl cursor-pointer transition duration-300"
+                        id="menuMobile"></i>
+                </div>
             </div>
-            <div id="menuContainer" class="w-screen bg-green-200 pt-20 pb-5 flex flex-col items-center gap-5 hidden">
-                <a href="" class="text-2xl text-green-500 font-bold">Como funciona?</a>
-                <a href="" class="text-2xl text-green-500 font-bold">Doar</a>
-                <a href="" class="text-2xl text-green-500 font-bold">Adquirir</a>
-                <a href="" class="text-2xl text-black font-bold bg-green-500 p-3 rounded-full">Começar agora</a>
 
+            <!-- Menu -->
+            <div id="menuContainer"
+                class="hidden flex flex-col w-full py-6 items-center gap-4 bg-gray-900 transition-colors duration-300">
+                <a href="#comoFunciona" class="text-xl font-bold hover:text-green-700 text-white transition">Como
+                    funciona?</a>
+                <a href="#contato" class="text-xl font-bold hover:text-green-700 transition text-white">Doar</a>
+                <a href="#produtos" class="text-xl font-bold hover:text-green-700 text-white transition">Adquirir</a>
+                <a href="#start"
+                    class="text-xl font-bold text-white bg-green-500 px-6 py-2 rounded-full hover:bg-green-600 transition">Começar
+                    agora</a>
             </div>
         </nav>
 
     </header>
 
     <!-- Principal -->
-    <main class="py-12 flex flex-col">
+    <main class="flex flex-col pt-12">
 
-        <section id="hero" class="flex items-center justify-center flex-col md:flex-row text-center">
-            <div class="flex flex-col gap-2 items-center justify-center">
-                <div class="flex flex-col gap-2 items-center justify-center">
-                    <h1
-                        class="text-6xl font-bold shadow-md shadow-black p-2 rounded-md border border-black bg-blue-600">
-                        Dê uma <span class="text-green-500">segunda vida</span>
-                        <br>
-                        aos seus <span class="text-green-500">eletrônicos</span>!
-                    </h1>
-                    <p class="text-center text-xl text-white">Conectamos pessoas que querem doar eletrônicos em bom
-                        estado
-                        <br>
-                        com quem precisa deles. Simples,
-                        gratuito e sustentável!
-                    </p>
-                </div>
-                <div class="flex justify-center md:gap-20 gap-2">
-                    <a href=""
-                        class="py-3 px-5 rounded-md text-white hover:bg-green-600 font-bold text-xl border border-green-600 bg-green-500 flex items-center gap-2 shadow-md shadow-gray-900">Quero
-                        doar<i class="fa-solid fa-gift text-2xl hover:text-red-600"></i></a>
-                    <a href=""
-                        class="bg-white py-3 px-5 rounded-md text-blue-500 font-bold border border-blue-600 hover:bg-blue-500 hover:text-white transition flex items-center gap-2 text-xl shadow-md shadow-gray-900">Quero
-                        Adquirir<i class="fa-solid fa-heart text-xl hover:text-red-600"></i></a>
+        <!-- Hero -->
+        <section id="hero"
+            class="flex flex-col-reverse md:flex-row items-center justify-between md:py-20 py-10 px-6 md:px-20 bg-gradient-to-r from-blue-600 to-green-500 text-white">
+
+            <!-- Texto -->
+            <div class="flex flex-col gap-6 md:w-1/2 items-center md:items-start text-center md:text-left">
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
+                    Dê uma <span class="text-yellow-400">segunda vida</span><br>
+                    aos seus <span class="text-yellow-400">eletrônicos</span>!
+                </h1>
+                <p class="text-lg md:text-xl max-w-md">
+                    Conectamos pessoas que querem doar eletrônicos em bom estado com quem precisa deles.<br>
+                    Simples, gratuito e sustentável!
+                </p>
+
+                <!-- Botões -->
+                <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto justify-center md:justify-start">
+                    <a href="#doar"
+                        class="flex items-center justify-center gap-2 bg-yellow-400 text-blue-900 font-bold text-lg md:text-xl py-3 px-6 rounded-full shadow-lg hover:bg-yellow-500 transition">
+                        Quero doar <i class="fa-solid fa-gift text-xl"></i>
+                    </a>
+                    <a href="#produtos"
+                        class="flex items-center justify-center gap-2 bg-white text-blue-600 font-bold text-lg md:text-xl py-3 px-6 rounded-full shadow-lg hover:bg-blue-500 hover:text-white transition">
+                        Quero adquirir <i class="fa-solid fa-heart text-xl"></i>
+                    </a>
                 </div>
             </div>
-            <img src="assets/logo.png" alt="" title="ReciclaTech">
+
+            <!-- Logo -->
+            <div class="md:w-1/2 flex justify-center md:justify-end mb-8 md:mb-0">
+                <img src="assets/logo.png" alt="ReciclaTech" title="ReciclaTech" class="w-64 md:w-80 animate-fadeIn">
+            </div>
         </section>
 
-        <section id="dados" class="flex bg-white justify-center py-10 w-full">
+        <!-- Dados -->
+        <section id="dados" class="flex justify-center py-10 w-full text-black">
             <div class="flex justify-center items-center gap-20 flex-col md:flex-row">
                 <div class="flex flex-col items-center text-center">
                     <h1 id="counter1" class="text-green-500 font-bold text-5xl">0k+</h1>
@@ -120,16 +144,16 @@
             </div>
         </section>
 
-
-        <section id="comoFunciona" class="py-10 flex flex-col justify-center items-center">
+        <!-- Como funciona -->
+        <section id="comoFunciona" class="py-10 flex flex-col justify-center items-center bg-gray-900">
             <div class="flex flex-col items-center">
-                <h1 class="text-4xl font-bold">Como funciona?</h1>
-                <p class="text-xl">É mais fácil que trocar a pilha do controle!</p>
+                <h1 class="text-5xl font-bold text-green-500">Como funciona?</h1>
+                <p class="text-4xl text-white">É mais fácil que trocar a pilha do controle!</p>
             </div>
 
             <div id="container" class="flex justify-between gap-5 py-10 flex-col md:flex-row">
                 <!-- Card Doadores -->
-                <div class="flex border border-2 border-green-900 py-5 px-3 rounded-2xl flex-col gap-2 bg-green-600 hover:bg-green-700 transition duration-500"
+                <div class="flex shadow-black shadow-md hover:-translate-y-3 transform py-5 px-3 rounded-2xl flex-col gap-2 bg-green-300 transition duration-500"
                     id="doadores">
                     <div class="flex justify-start gap-2 items-center text-green-900">
                         <i class="fa-solid fa-gift text-2xl bg-green-400 px-3 py-2 rounded-full"></i>
@@ -162,7 +186,7 @@
                     </div>
                 </div>
                 <!-- Card adquirentes -->
-                <div class="flex border border-2 py-5 px-3 rounded-2xl flex-col gap-2 bg-blue-600 border-blue-900 hover:bg-blue-500 transition duration-500"
+                <div class="flex py-5 px-3 shadow-black shadow-md rounded-2xl flex-col gap-2 bg-blue-300 transition duration-500 hover:-translate-y-3 transform"
                     id="adquirentes">
                     <div class="flex justify-start gap-2 items-center text-blue-900">
                         <i class="fa-solid fa-heart text-2xl bg-blue-400 py-2 px-3 rounded-full"></i>
@@ -197,31 +221,155 @@
             </div>
         </section>
 
-        <section id="produtos"></section>
+        <!-- Produtos -->
+        <section id="produtos" class="py-10">
+            <div class="flex flex-col items-center mb-10">
+                <h1 class="text-6xl font-bold">Produtos disponíveis</h1>
+                <p class="text-4xl">
+                    Os mais populares <i class="fa-solid fa-trophy text-yellow-500"></i>
+                </p>
+            </div>
 
-        <section id="depoimentos"></section>
+            <div id="galeria" class="space-y-16"></div>
+        </section>
 
-        <section id="saibaMais" class="flex justify-center items-center flex-col gap-5">
+        <!-- Depoimentos -->
+        <section id="depoimentos" class="py-12 w-full flex flex-col items-center text-center">
+            <h1 class="text-5xl text-green-500 font-bold">O que dizem nossos clientes?</h1>
+            <p class="text-2xl">Histórias reais de quem já usou</p>
+            <div id="depoimentosGaleria" class=" text-black flex flex-col md:flex-row justify-center gap-6 md:px-0">
+            </div>
+        </section>
+
+        <!-- Start -->
+        <section id="start" class="flex justify-center items-center flex-col gap-5 py-10 text-center bg-gray-900">
             <h1 class="font-bold text-green-500 text-5xl">
                 Pronto para fazer a diferença?
             </h1>
-            <p class="text-2xl">Junte-se à nossa comunidade e ajude a criar um
+            <p class="text-2xl text-white">Junte-se à nossa comunidade e ajude a criar um
                 <br>
                 mundo mais sustentável, um eletrônico de cada vez!
             </p>
             <div class="flex gap-5 justify-center text-center items-center">
-                <a href="" class="text-white p-2 bg-green-500 rounded-md">Começar agora?</a>
                 <a href=""
-                    class="text-white py-2 px-3 border border-red-500 rounded-md hover:bg-red-500 transition duration-500">Saber
+                    class="text-white py-2 px-3 border border-green-900 bg-green-500 rounded-md hover:bg-green-600 transition duration-500">Começar
+                    agora?</a>
+                <a href=""
+                    class="text-white py-2 px-3 border border-red-900 bg-red-500 rounded-md hover:bg-red-600 transition duration-500">Saber
                     mais</a>
             </div>
         </section>
 
-        <section id="contato">
-            <p></p>
+        <!-- Contato -->
+        <section id="contato" class="flex flex-col items-center text-center py-12 gap-8">
+            <h1 class="text-5xl font-bold text-green-500">Entre em contato conosco</h1>
+
+            <form id="contatoForm" class="w-full max-w-3xl flex flex-col gap-6 px-4 sm:px-0">
+
+                <!-- Nome e Sobrenome -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <div class="flex flex-col w-full">
+                        <label for="nome" class="text-lg font-semibold mb-1">Nome *</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." maxlength="50"
+                            autocomplete="given-name" required
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 focus:outline-none transition" />
+                    </div>
+                    <div class="flex flex-col w-full">
+                        <label for="sobrenome" class="text-lg font-semibold mb-1">Sobrenome *</label>
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome..."
+                            maxlength="50" autocomplete="family-name" required
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 focus:outline-none transition" />
+                    </div>
+                </div>
+
+                <!-- Idade e Gênero -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <div class="flex flex-col w-full">
+                        <label for="idade" class="text-lg font-semibold mb-1">Idade *</label>
+                        <input type="number" id="idade" name="idade" min="1" max="120" placeholder="Insira sua idade..."
+                            required
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 focus:outline-none transition" />
+                    </div>
+                    <div class="flex flex-col w-full">
+                        <label for="genero" class="text-lg font-semibold mb-1">Gênero</label>
+                        <select id="genero" name="genero"
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 focus:outline-none transition">
+                            <option value="" disabled selected>Selecione...</option>
+                            <option value="masc">Masculino</option>
+                            <option value="fem">Feminino</option>
+                            <option value="trans">Trans</option>
+                            <option value="nao">Prefiro não informar</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Email e Telefone -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <div class="flex flex-col w-full">
+                        <label for="email" class="text-lg font-semibold mb-1">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="Insira seu email..." maxlength="100"
+                            autocomplete="email" required
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 focus:outline-none transition" />
+                    </div>
+                    <div class="flex flex-col w-full">
+                        <label for="telefone" class="text-lg font-semibold mb-1">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxx-xxxx" maxlength="15"
+                            pattern="^\(?\d{2}\)?[\s-]?\d{4,5}-?\d{4}$"
+                            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 focus:outline-none transition" />
+                    </div>
+                </div>
+
+                <!-- Assunto -->
+                <div class="flex flex-col">
+                    <label for="assunto" class="text-lg font-semibold mb-1">Assunto *</label>
+                    <select id="assunto" name="assunto" required
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 focus:outline-none transition">
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="doar">Quero doar um produto</option>
+                        <option value="adquirir">Quero adquirir um produto</option>
+                        <option value="reclamar">Abrir reclamação</option>
+                        <option value="sugestao">Enviar sugestão</option>
+                        <option value="parceria">Propor parceria</option>
+                        <option value="suporte">Suporte técnico / ajuda</option>
+                        <option value="outro">Outro</option>
+                    </select>
+
+                </div>
+
+                <!-- Mensagem -->
+                <div class="flex flex-col">
+                    <label for="mensagem" class="text-lg font-semibold mb-1">Mensagem *</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..." rows="5"
+                        maxlength="1000" required
+                        class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-green-500 focus:outline-none transition resize-none"></textarea>
+                </div>
+
+                <!-- Botão -->
+                <button type="submit"
+                    class="w-full bg-green-500 hover:bg-green-600 text-white font-bold text-xl py-3 rounded-lg transition">
+                    Confirmar
+                </button>
+
+            </form>
         </section>
 
-        <section id="local"></section>
+        <!-- Mapa -->
+        <section id="mapa" class="flex flex-col items-center justify-center bg-gray-900 py-12 px-6">
+
+            <h1 class="text-4xl md:text-5xl font-bold text-green-500 mb-8 text-center">
+                Onde estamos?
+            </h1>
+
+            <div class="w-full max-w-5xl h-72 md:h-96 shadow-lg rounded-xl overflow-hidden">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d117010.70552337157!2d-46.7345931!3d-23.5833601!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c88849fd6d%3A0x6c2a8652e6e5b36a!2sShopping%20Cidade%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1760801370657!5m2!1spt-BR!2sbr"
+                    class="w-full h-full border-0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Localização da ReciclaTech">
+                </iframe>
+            </div>
+
+        </section>
+
     </main>
 
     <!-- Rodapé -->
@@ -305,7 +453,17 @@
                     class="fa-brands fa-github text-4xl"></i></a>
         </div>
     </footer>
+
+    <!-- Whatsapp ícone -->
+    <div class="fixed bottom-10 right-10 bg-green-500 rounded-full py-2 px-3 shadow-gray-900 z-50 shadow-md">
+        <a href="" class="hover:text-gray-300 transition duration-300"><i
+                class="text-6xl  fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
+    <script src="produtos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>

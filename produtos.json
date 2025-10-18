@@ -1,0 +1,170 @@
+{
+    "tablet": [
+        {
+            "imagem": "https://m.media-amazon.com/images/I/61nn6gLwAoL.jpg",
+            "titulo": "Samsung Galaxy Tab S9",
+            "descricao": "Tela 11”, 256GB, Snapdragon 8 Gen 2, S Pen inclusa",
+            "alt": "Tablet Samsung Galaxy Tab S9 com S Pen",
+            "title": "Samsung Galaxy Tab S9",
+            "link": "https://www.samsung.com/br/tablets/galaxy-tab-s9/"
+        },
+        {
+            "imagem": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/ipad-air-11-inch-m2.png",
+            "titulo": "Apple iPad Air M2",
+            "descricao": "Chip M2, 10.9”, 128GB, compatível com Apple Pencil 2",
+            "alt": "Apple iPad Air M2 com chip M2 e tela de 10.9 polegadas",
+            "title": "Apple iPad Air M2",
+            "link": "https://www.apple.com/br/ipad-air/"
+        },
+        {
+            "imagem": "https://br.etoren.com/upload/images/0.76892400_1682327389_xiaomi-pad-6-pro-11.0-inch-wifi-256gb-blue-12gb-ram-china-version.jpg",
+            "titulo": "Xiaomi Pad 6 Pro",
+            "descricao": "Tela 11”, 144Hz, Snapdragon 8+ Gen 1, bateria 8600mAh",
+            "alt": "Xiaomi Pad 6 Pro com tela 144Hz e bateria de 8600mAh",
+            "title": "Xiaomi Pad 6 Pro",
+            "link": "https://www.mi.com/global/product/xiaomi-pad-6-pro/"
+        },
+        {
+            "imagem": "https://m.media-amazon.com/images/I/41N+tjgAn3L._UF1000,1000_QL80_.jpg",
+            "titulo": "Lenovo Tab P12 Pro",
+            "descricao": "Tela AMOLED 12.6”, 8GB RAM, 256GB armazenamento",
+            "alt": "Lenovo Tab P12 Pro com tela AMOLED de 12.6 polegadas",
+            "title": "Lenovo Tab P12 Pro",
+            "link": "https://www.lenovo.com/br/pt/tablets/lenovo-tab-series/lenovo-tab-p12-pro/"
+        },
+        {
+            "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwStISej21VzsIRYGdQOGWcX-qAaC8MgnUiw&s",
+            "titulo": "Huawei MatePad 11",
+            "descricao": "Snapdragon 865, 120Hz, 6GB RAM, 128GB ROM",
+            "alt": "Huawei MatePad 11 com Snapdragon 865 e tela 120Hz",
+            "title": "Huawei MatePad 11",
+            "link": "https://consumer.huawei.com/br/tablets/matepad-11/"
+        }
+    ],
+    "notebook": [
+        {
+            "imagem": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/9345/spi/platinum/touch-oled/notebook-xps-13-9345-oled-silver-campaign-hero-504x350-ng.psd?fmt=jpg&wid=570&hei=400",
+            "titulo": "Dell XPS 13",
+            "descricao": "Intel Core i7 13ª Geração, 16GB RAM, SSD 1TB",
+            "alt": "Notebook Dell XPS 13 com processador Intel Core i7",
+            "title": "Dell XPS 13",
+            "link": "https://www.dell.com/pt-br/shop/notebooks-xps"
+        },
+        {
+            "imagem": "https://www.apple.com/newsroom/images/2024/03/apple-unveils-the-new-13-and-15-inch-macbook-air-with-the-powerful-m3-chip/article/Apple-MacBook-Air-2-up-hero-240304_big.jpg.large.jpg",
+            "titulo": "MacBook Air M3",
+            "descricao": "Chip M3, 8GB RAM, 512GB SSD, tela Liquid Retina",
+            "alt": "MacBook Air M3 com tela Liquid Retina e chip M3",
+            "title": "MacBook Air M3",
+            "link": "https://www.apple.com/br/macbook-air/"
+        },
+        {
+            "imagem": "https://br.octoshop.com/cdn/shop/files/rog_zephyrus_g14_2024.jpg?v=1739297738",
+            "titulo": "Asus ROG Zephyrus G14",
+            "descricao": "Ryzen 9, RTX 4060, 16GB RAM, SSD 1TB, 165Hz",
+            "alt": "Notebook gamer Asus ROG Zephyrus G14 com RTX 4060",
+            "title": "Asus ROG Zephyrus G14",
+            "link": "https://rog.asus.com/laptops/rog-zephyrus/rog-zephyrus-g14-2023-series/"
+        },
+        {
+            "imagem": "https://m.media-amazon.com/images/I/51gEkEbXrHL._AC_UF894,1000_QL80_.jpg",
+            "titulo": "Acer Aspire 5",
+            "descricao": "Intel i5, 8GB RAM, SSD 512GB, 15.6” Full HD",
+            "alt": "Notebook Acer Aspire 5 com processador Intel i5",
+            "title": "Acer Aspire 5",
+            "link": "https://www.acer.com/br-pt/laptops/aspire/aspire-5"
+        },
+        {
+            "imagem": "https://m.media-amazon.com/images/I/81iKKYRE89L._UF894,1000_QL80_.jpg",
+            "titulo": "Lenovo IdeaPad 3",
+            "descricao": "Ryzen 5 5625U, 8GB RAM, SSD 512GB, Windows 11",
+            "alt": "Notebook Lenovo IdeaPad 3 com Ryzen 5 e Windows 11",
+            "title": "Lenovo IdeaPad 3",
+            "link": "https://www.lenovo.com/br/pt/laptops/ideapad-series/ideapad-3/"
+        }
+    ],
+    "smartphone": [
+        {
+            "imagem": "https://horizonplay.fbitsstatic.net/img/p/apple-iphone-15-pro-max-256gb-5g-vitrine-tela-super-retina-xdr-display-6-7-titanio-branco-152589/339192-5.jpg?w=670&h=670&v=202501261959",
+            "titulo": "iPhone 15 Pro Max",
+            "descricao": "Tela 6.7”, A17 Pro, 256GB, Titanium Blue",
+            "alt": "iPhone 15 Pro Max na cor Titanium Blue com chip A17 Pro",
+            "title": "iPhone 15 Pro Max",
+            "link": "https://www.apple.com/br/iphone-15-pro/"
+        },
+        {
+            "imagem": "https://a-static.mlcdn.com.br/450pxx450px/smartphone-samsung-galaxy-s24-ultra-68-galaxy-ai-256gb-titanio-violeta-5g-12gb-ram-cam-quadrupla-200mp-selfie-12mp-bateria-5000mah-dual-chip/magazineluiza/238094900/b3b4d29aeebf4dbaf4f4935eaf4ffa24.jpg",
+            "titulo": "Samsung Galaxy S24 Ultra",
+            "descricao": "Snapdragon 8 Gen 3, 200MP, 12GB RAM, 1TB",
+            "alt": "Samsung Galaxy S24 Ultra com câmera de 200MP e 1TB de armazenamento",
+            "title": "Samsung Galaxy S24 Ultra",
+            "link": "https://www.samsung.com/br/smartphones/galaxy-s24-ultra/"
+        },
+        {
+            "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS58t-DlJaOiZG0tvltsj6KaeZTZcd4yfk2ww&s",
+            "titulo": "Google Pixel 8 Pro",
+            "descricao": "Tensor G3, 6.7” OLED, 120Hz, 12GB RAM",
+            "alt": "Google Pixel 8 Pro com chip Tensor G3 e tela OLED 120Hz",
+            "title": "Google Pixel 8 Pro",
+            "link": "https://store.google.com/product/pixel_8_pro"
+        },
+        {
+            "imagem": "https://br.octoshop.com/cdn/shop/files/Xiaomi_14_Ultra_16GB_19.jpg?v=1748025038",
+            "titulo": "Xiaomi 14 Ultra",
+            "descricao": "Leica Camera, Snapdragon 8 Gen 3, 16GB RAM",
+            "alt": "Xiaomi 14 Ultra com câmeras Leica e Snapdragon 8 Gen 3",
+            "title": "Xiaomi 14 Ultra",
+            "link": "https://www.mi.com/global/product/xiaomi-14-ultra/"
+        },
+        {
+            "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTw4AOrJ1qcPP-LSDUeg2r-JNqqjWwg4xIbQ&s",
+            "titulo": "Motorola Edge 50 Fusion",
+            "descricao": "Snapdragon 7s Gen 2, 8GB RAM, 256GB armazenamento",
+            "alt": "Motorola Edge 50 Fusion com Snapdragon 7s Gen 2 e 256GB de espaço",
+            "title": "Motorola Edge 50 Fusion",
+            "link": "https://www.motorola.com.br/smartphones-edge-50-fusion/p"
+        }
+    ],
+    "consoles": [
+        {
+            "imagem": "https://m.media-amazon.com/images/I/71ANJQTALWL._AC_UF1000,1000_QL80_.jpg",
+            "titulo": "PlayStation 5 Slim",
+            "descricao": "Edição Digital, 1TB SSD, DualSense incluso",
+            "alt": "Console PlayStation 5 Slim edição digital com DualSense",
+            "title": "PlayStation 5 Slim",
+            "link": "https://www.playstation.com/ps5/"
+        },
+        {
+            "imagem": "https://images.tcdn.com.br/img/img_prod/993382/console_xbox_series_x_diablo_iv_843_1_cda1d03ec5cfe4e5d52c2ba93f521818.png",
+            "titulo": "Xbox Series X",
+            "descricao": "1TB SSD, 4K HDR, 120fps, controle sem fio",
+            "alt": "Console Xbox Series X com suporte a 4K HDR e 120fps",
+            "title": "Xbox Series X",
+            "link": "https://www.xbox.com/pt-BR/consoles/xbox-series-x"
+        },
+        {
+            "imagem": "https://m.media-amazon.com/images/I/61nqNujSF2L.jpg",
+            "titulo": "Nintendo Switch OLED",
+            "descricao": "Tela OLED 7”, 64GB internos, Joy-Con branco",
+            "alt": "Nintendo Switch OLED branco com tela de 7 polegadas",
+            "title": "Nintendo Switch OLED",
+            "link": "https://www.nintendo.com/pt-br/switch/oled-model/"
+        },
+        {
+            "imagem": "https://m.media-amazon.com/images/I/51N0jRIIopL._UF1000,1000_QL80_.jpg",
+            "titulo": "Steam Deck OLED",
+            "descricao": "512GB NVMe SSD, AMD APU, tela HDR 7.4”",
+            "alt": "Steam Deck OLED com tela HDR de 7.4 polegadas e 512GB SSD",
+            "title": "Steam Deck OLED",
+            "link": "https://store.steampowered.com/steamdeck"
+        },
+        {
+            "imagem": "https://br.octoshop.com/cdn/shop/files/asus_rog_ally_z1_extreme_512gb_white_4.jpg?v=1739289753",
+            "titulo": "ASUS ROG Ally",
+            "descricao": "Ryzen Z1 Extreme, 7” 120Hz, 16GB RAM, 512GB SSD",
+            "alt": "Console portátil ASUS ROG Ally com Ryzen Z1 Extreme e tela 120Hz",
+            "title": "ASUS ROG Ally",
+            "link": "https://rog.asus.com/gaming-handhelds/rog-ally/"
+        }
+    ]
+}
