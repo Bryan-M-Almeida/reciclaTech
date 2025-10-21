@@ -26,10 +26,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body class="">
-
+<body class="bg-[radial-gradient(circle,_#064e3b,_#065f46)]">
     <!-- Cabeçalho -->
-    <header class="bg-gray-900 fixed w-full z-50 shadow-lg">
+    <header class="bg-green-900/50 backdrop-blur fixed w-full z-50 shadow-lg" id="header">
         <!-- Nav desktop -->
         <nav class="hidden md:flex justify-between items-center max-w-7xl mx-auto px-6 py-4 text-white">
             <div class="flex items-center gap-3">
@@ -47,11 +46,12 @@
                     <a href="#produtos"
                         class="text-lg font-semibold transition hover:text-green-500 hover:border-b border-green-500">Adquirir</a>
                 </div>
-                <a href="#start"
+                <a href="#iniciar"
                     class="bg-green-500 text-black font-bold py-2 px-4 rounded-md hover:bg-green-600 hover:text-white transition">Começar
                     agora</a>
             </div>
-            <button class="btnDarkMode"><i class="fa-solid fa-moon iconeDarkMode"></i></button>
+            <button class="btnDarkMode"><i
+                    class="fa-solid fa-moon iconeDarkMode bg-green-700 p-2 rounded-full"></i></button>
         </nav>
 
         <!-- Nav mobile -->
@@ -59,8 +59,8 @@
             <!-- Top bar -->
             <div class="flex items-center justify-between px-6 py-4 transition-colors duration-300">
                 <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-recycle text-3xl text-green-500"></i>
-                    <h1 class="text-2xl font-bold text-green-500">ReciclaTech</h1>
+                    <i class="fa-solid fa-recycle text-3xl text-green-900"></i>
+                    <h1 class="text-2xl font-bold text-white">ReciclaTech</h1>
                 </div>
                 <div class="flex items-center gap-4">
                     <!-- Botão Dark Mode -->
@@ -76,12 +76,12 @@
 
             <!-- Menu -->
             <div id="menuContainer"
-                class="hidden flex flex-col w-full py-6 items-center gap-4 bg-gray-900 transition-colors duration-300">
+                class="hidden flex flex-col w-full py-6 items-center gap-4 transition-colors duration-300">
                 <a href="#comoFunciona" class="text-xl font-bold hover:text-green-700 text-white transition">Como
                     funciona?</a>
                 <a href="#contato" class="text-xl font-bold hover:text-green-700 transition text-white">Doar</a>
                 <a href="#produtos" class="text-xl font-bold hover:text-green-700 text-white transition">Adquirir</a>
-                <a href="#start"
+                <a href="#iniciar"
                     class="text-xl font-bold text-white bg-green-500 px-6 py-2 rounded-full hover:bg-green-600 transition">Começar
                     agora</a>
             </div>
@@ -90,14 +90,14 @@
     </header>
 
     <!-- Principal -->
-    <main class="flex flex-col pt-12">
+    <main class="flex flex-col">
 
         <!-- Hero -->
         <section id="hero"
-            class="flex flex-col-reverse md:flex-row items-center justify-between md:py-20 py-10 px-6 md:px-20 bg-gradient-to-r from-blue-600 to-green-500 text-white">
+            class="flex flex-col-reverse md:flex-row items-center justify-between md:py-20 py-10 px-6 md:px-20 color-2 text-white bg-green-900 reveal reveal-left">
 
             <!-- Texto -->
-            <div class="flex flex-col gap-6 md:w-1/2 items-center md:items-start text-center md:text-left">
+            <div class="flex flex-col gap-6 md:w-1/2 items-center md:items-iniciar text-center md:text-left">
                 <h1 class="text-5xl md:text-6xl font-extrabold leading-tight">
                     Dê uma <span class="text-yellow-400">segunda vida</span><br>
                     aos seus <span class="text-yellow-400">eletrônicos</span>!
@@ -108,13 +108,13 @@
                 </p>
 
                 <!-- Botões -->
-                <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto justify-center md:justify-start">
-                    <a href="#doar"
+                <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto justify-center md:justify-iniciar">
+                    <a href="#contato"
                         class="flex items-center justify-center gap-2 bg-yellow-400 text-blue-900 font-bold text-lg md:text-xl py-3 px-6 rounded-full shadow-lg hover:bg-yellow-500 transition">
                         Quero doar <i class="fa-solid fa-gift text-xl"></i>
                     </a>
                     <a href="#produtos"
-                        class="flex items-center justify-center gap-2 bg-white text-blue-600 font-bold text-lg md:text-xl py-3 px-6 rounded-full shadow-lg hover:bg-blue-500 hover:text-white transition">
+                        class="flex items-center justify-center gap-2 bg-white text-green-600 font-bold text-lg md:text-xl py-3 px-6 rounded-full shadow-lg hover:bg-green-500 hover:text-white transition">
                         Quero adquirir <i class="fa-solid fa-heart text-xl"></i>
                     </a>
                 </div>
@@ -127,7 +127,7 @@
         </section>
 
         <!-- Dados -->
-        <section id="dados" class="flex justify-center py-10 w-full text-black">
+        <section id="dados" class="reveal reveal-left flex justify-center py-10 w-full text-white">
             <div class="flex justify-center items-center gap-20 flex-col md:flex-row">
                 <div class="flex flex-col items-center text-center">
                     <h1 id="counter1" class="text-green-500 font-bold text-5xl">0k+</h1>
@@ -145,75 +145,76 @@
         </section>
 
         <!-- Como funciona -->
-        <section id="comoFunciona" class="py-10 flex flex-col justify-center items-center bg-gray-900">
-            <div class="flex flex-col items-center">
+        <section id="comoFunciona"
+            class="reveal reveal-left py-10 flex flex-col justify-center items-center color-2 bg-green-900">
+            <div class="flex flex-col items-center text-center">
                 <h1 class="text-5xl font-bold text-green-500">Como funciona?</h1>
                 <p class="text-4xl text-white">É mais fácil que trocar a pilha do controle!</p>
             </div>
 
             <div id="container" class="flex justify-between gap-5 py-10 flex-col md:flex-row">
                 <!-- Card Doadores -->
-                <div class="flex shadow-black shadow-md hover:-translate-y-3 transform py-5 px-3 rounded-2xl flex-col gap-2 bg-green-300 transition duration-500"
+                <div class="flex shadow-black shadow-md hover:-translate-y-3 transform py-5 px-3 rounded-2xl flex-col gap-2 bg-yellow-400 transition duration-500"
                     id="doadores">
-                    <div class="flex justify-start gap-2 items-center text-green-900">
-                        <i class="fa-solid fa-gift text-2xl bg-green-400 px-3 py-2 rounded-full"></i>
+                    <div class="flex justify-iniciar gap-2 items-center text-blue-900">
+                        <i class="fa-solid fa-gift text-2xl bg-yellow-500 px-3 py-2 rounded-full"></i>
                         <h2 class="text-xl font-bold">Para doadores</h2>
                     </div>
                     <p>Transforme seu "lixo eletrônico" no tesouro de alguém</p>
                     <div class="flex flex-col gap-5 py-3">
 
                         <div class="flex items-center gap-2">
-                            <h2 class="text-xl text-white bg-green-900 px-4 py-2 font-bold rounded-full">1</h2>
+                            <h2 class="text-xl text-blue-900 bg-yellow-500 px-4 py-2 font-bold rounded-full">1</h2>
                             <div>
-                                <h3 class="text-xl font-bold">Cadastre seu eletrônico</h3>
-                                <p class="text-white">Tire umas fotos, descreva o estado e pronto!</p>
+                                <h3 class="text-xl font-bold text-blue-900">Cadastre seu eletrônico</h3>
+                                <p class="text-gray-900">Tire umas fotos, descreva o estado e pronto!</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-2">
-                            <h2 class="text-xl text-white bg-green-900 px-4 py-2 font-bold rounded-full">2</h2>
+                            <h2 class="text-xl text-blue-900 bg-yellow-500 px-4 py-2 font-bold rounded-full">2</h2>
                             <div>
-                                <h3 class="text-xl font-bold">Aguarde o match</h3>
-                                <p class="text-white">Alguém vai se interessar pelo seu item</p>
+                                <h3 class="text-xl font-bold text-blue-900">Aguarde o match</h3>
+                                <p class="text-gray-900">Alguém vai se interessar pelo seu item</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-2">
-                            <h2 class="text-xl text-white bg-green-900 px-4 py-2 font-bold rounded-full">3</h2>
+                            <h2 class="text-xl text-blue-900 bg-yellow-500 px-4 py-2 font-bold rounded-full">3</h2>
                             <div>
-                                <h3 class="text-xl font-bold">Combine a entrega</h3>
-                                <p class="text-white">Vocês decidem como fazer a entrega</p>
+                                <h3 class="text-xl font-bold text-blue-900">Combine a entrega</h3>
+                                <p class="text-gray-900">Vocês decidem como fazer a entrega</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Card adquirentes -->
-                <div class="flex py-5 px-3 shadow-black shadow-md rounded-2xl flex-col gap-2 bg-blue-300 transition duration-500 hover:-translate-y-3 transform"
+                <div class="flex py-5 px-3 shadow-black shadow-md rounded-2xl flex-col gap-2 bg-green-300 transition duration-500 hover:-translate-y-3 transform"
                     id="adquirentes">
-                    <div class="flex justify-start gap-2 items-center text-blue-900">
-                        <i class="fa-solid fa-heart text-2xl bg-blue-400 py-2 px-3 rounded-full"></i>
+                    <div class="flex justify-iniciar gap-2 items-center text-green-900">
+                        <i class="fa-solid fa-heart text-2xl bg-green-500 py-2 px-3 rounded-full"></i>
                         <h2 class="text-xl font-bold">Para adquirentes</h2>
                     </div>
                     <p>Encontre o eletrônico dos seus sonhos de graça</p>
                     <div class="flex flex-col gap-5 py-3">
 
                         <div class="flex items-center gap-2">
-                            <h2 class="text-xl text-white bg-blue-900 px-4 py-2 font-bold rounded-full">1</h2>
+                            <h2 class="text-xl text-white bg-green-500 px-4 py-2 font-bold rounded-full">1</h2>
                             <div>
                                 <h3 class="text-xl font-bold">Demonstre interesse</h3>
-                                <p class="text-white">Clique em "Tenho interesse" no item</p>
+                                <p class="text-gray-900">Clique em "Solicitar" no item</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-2">
-                            <h2 class="text-xl text-white bg-blue-900 px-4 py-2 font-bold rounded-full">2</h2>
+                            <h2 class="text-xl text-white bg-green-500 px-4 py-2 font-bold rounded-full">2</h2>
                             <div>
                                 <h3 class="text-xl font-bold">Receba seu novo gadget</h3>
-                                <p class="text-white">Combine com o doador e seja feliz!</p>
+                                <p class="text-gray-900">Combine com o doador e seja feliz!</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-2">
-                            <h2 class="text-xl text-white bg-blue-900 px-4 py-2 font-bold rounded-full">3</h2>
+                            <h2 class="text-xl text-white bg-green-500 px-4 py-2 font-bold rounded-full">3</h2>
                             <div>
                                 <h3 class="text-xl font-bold">Combine a entrega</h3>
-                                <p class="text-white">Vocês decidem como fazer a entrega</p>
+                                <p class="text-gray-900">Vocês decidem como fazer a entrega</p>
                             </div>
                         </div>
                     </div>
@@ -222,10 +223,10 @@
         </section>
 
         <!-- Produtos -->
-        <section id="produtos" class="py-10">
-            <div class="flex flex-col items-center mb-10">
-                <h1 class="text-6xl font-bold">Produtos disponíveis</h1>
-                <p class="text-4xl">
+        <section id="produtos" class="py-10 reveal reveal-left">
+            <div class="flex flex-col items-center mb-10 text-center gap-5">
+                <h1 class="text-6xl font-bold text-green-500">Produtos disponíveis</h1>
+                <p class="text-4xl text-white">
                     Os mais populares <i class="fa-solid fa-trophy text-yellow-500"></i>
                 </p>
             </div>
@@ -234,15 +235,16 @@
         </section>
 
         <!-- Depoimentos -->
-        <section id="depoimentos" class="py-12 w-full flex flex-col items-center text-center">
+        <section id="depoimentos"
+            class="py-12 w-full flex flex-col items-center text-center color-2 bg-green-900 overflow-hidden reveal reveal-left">
             <h1 class="text-5xl text-green-500 font-bold">O que dizem nossos clientes?</h1>
-            <p class="text-2xl">Histórias reais de quem já usou</p>
-            <div id="depoimentosGaleria" class=" text-black flex flex-col md:flex-row justify-center gap-6 md:px-0">
-            </div>
+            <p class="text-2xl text-white">Histórias reais de quem já usou</p>
+            <div id="depoimentosGaleria" class="flex gap-6 mt-8 animate-slide"></div>
         </section>
 
-        <!-- Start -->
-        <section id="start" class="flex justify-center items-center flex-col gap-5 py-10 text-center bg-gray-900">
+        <!-- iniciar -->
+        <section id="iniciar"
+            class="reveal reveal-zoom flex justify-center items-center flex-col gap-5 py-10 text-center">
             <h1 class="font-bold text-green-500 text-5xl">
                 Pronto para fazer a diferença?
             </h1>
@@ -251,17 +253,18 @@
                 mundo mais sustentável, um eletrônico de cada vez!
             </p>
             <div class="flex gap-5 justify-center text-center items-center">
-                <a href=""
+                <a href="#contato"
                     class="text-white py-2 px-3 border border-green-900 bg-green-500 rounded-md hover:bg-green-600 transition duration-500">Começar
                     agora?</a>
-                <a href=""
+                <a href="#saibaMais"
                     class="text-white py-2 px-3 border border-red-900 bg-red-500 rounded-md hover:bg-red-600 transition duration-500">Saber
                     mais</a>
             </div>
         </section>
 
         <!-- Contato -->
-        <section id="contato" class="flex flex-col items-center text-center py-12 gap-8">
+        <section id="contato"
+            class="reveal reveal-left flex flex-col items-center text-center py-12 gap-8 color-2 bg-green-900">
             <h1 class="text-5xl font-bold text-green-500">Entre em contato conosco</h1>
 
             <form id="contatoForm" class="w-full max-w-3xl flex flex-col gap-6 px-4 sm:px-0">
@@ -354,7 +357,7 @@
         </section>
 
         <!-- Mapa -->
-        <section id="mapa" class="flex flex-col items-center justify-center bg-gray-900 py-12 px-6">
+        <section id="mapa" class="reveal reveal-zoom flex flex-col items-center justify-center py-12 px-6">
 
             <h1 class="text-4xl md:text-5xl font-bold text-green-500 mb-8 text-center">
                 Onde estamos?
@@ -370,14 +373,290 @@
 
         </section>
 
+        <!-- SOBRE -->
+        <section id="sobre" class="py-16 bg-green-900 color-2 text-white overflow-hidden">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+
+                <!-- Texto -->
+                <div class="md:w-1/2 reveal reveal-left">
+                    <h2 class="text-4xl md:text-5xl font-bold text-green-400 mb-4">Sobre Nós</h2>
+                    <p class="text-green-100 mb-6">
+                        A ReciclaTech é uma iniciativa que visa transformar o descarte e doações em oportunidades
+                        sustentáveis.
+                        Aqui você pode adquirir produtos reciclados, doar itens que não usa mais e fazer parte de uma
+                        comunidade consciente.
+                    </p>
+                    <p class="text-green-100 mb-6">
+                        Nosso objetivo é tornar a reciclagem e a doação algo simples e acessível, ajudando pessoas e o
+                        meio ambiente ao mesmo tempo.
+                    </p>
+                </div>
+
+                <!-- Imagem/Ilustração -->
+                <div class="md:w-1/2 reveal reveal-left">
+                    <img src="assets/logo.png" alt="Logo ReciclaTech" title="ReciclaTech"
+                        class="w-full max-w-md mx-auto">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Saiba Mais -->
+        <section id="saibaMais" class="py-16 text-white overflow-hidden">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-green-400 mb-10 text-center reveal reveal-up">
+                    Saiba Mais
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-green-900 rounded-xl p-6 shadow-lg reveal reveal-up delay-200">
+                        <h3 class="text-2xl font-semibold text-green-300 mb-3">Doações</h3>
+                        <p class="text-green-100">
+                            Doe itens que você não usa mais e ajude pessoas e instituições. Tudo de forma prática e
+                            segura.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-green-900 rounded-xl p-6 shadow-lg reveal reveal-up delay-400">
+                        <h3 class="text-2xl font-semibold text-green-300 mb-3">Aquisições</h3>
+                        <p class="text-green-100">
+                            Adquira produtos reciclados e sustentáveis com facilidade. Incentivamos o consumo
+                            consciente.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-green-900 rounded-xl p-6 shadow-lg reveal reveal-up delay-600">
+                        <h3 class="text-2xl font-semibold text-green-300 mb-3">Conscientização</h3>
+                        <p class="text-green-100">
+                            Participe de campanhas educativas sobre reciclagem e sustentabilidade. Faça parte da
+                            mudança.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARCERIAS -->
+        <section id="parcerias"
+            class="text-center py-16 w-full flex flex-col items-center overflow-hidden color-2 bg-green-900">
+            <h2 class="text-5xl font-bold text-green-400 mb-2">Nossas Parcerias</h2>
+            <p class="text-white text-xl mb-10">Empresas e marcas que acreditam na ReciclaTech</p>
+
+            <!-- Fileira 1 -->
+            <div id="logosLinha1" class="flex items-center gap-12 animate-slide "></div>
+
+            <!-- Fileira 2 -->
+            <div id="logosLinha2" class="flex items-center gap-12 animate-slide-reverse mt-10"></div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="py-16 text-white overflow-hidden">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-green-400 mb-10 text-center reveal reveal-up">
+                    Perguntas Frequentes
+                </h2>
+
+                <div class="space-y-4 max-w-3xl mx-auto">
+
+                    <!-- Pergunta 1 -->
+                    <div class="faq-item bg-green-800 rounded-xl shadow-md p-5 reveal reveal-up delay-200">
+                        <button
+                            class="faq-question w-full text-left flex justify-between items-center font-semibold text-green-200 focus:outline-none">
+                            Como posso fazer uma doação?
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 text-green-100 mt-2">
+                            Você pode doar itens usando nosso formulário na seção "Entre em contato" ou entrando em
+                            contato com nossa equipe.
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 2 -->
+                    <div class="faq-item bg-green-800 rounded-xl shadow-md p-5 reveal reveal-up delay-400">
+                        <button
+                            class="faq-question w-full text-left flex justify-between items-center font-semibold text-green-200 focus:outline-none">
+                            Como adquirir produtos reciclados?
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 text-green-100 mt-2">
+                            Navegue pela seção "Produtos disponíveis" e clique em "Solicitar" para ver os produtos
+                            disponíveis.
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 3 -->
+                    <div class="faq-item bg-green-800 rounded-xl shadow-md p-5 reveal reveal-up delay-600">
+                        <button
+                            class="faq-question w-full text-left flex justify-between items-center font-semibold text-green-200 focus:outline-none">
+                            Posso participar das iniciativas de sustentabilidade?
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 text-green-100 mt-2">
+                            Sim! Basta se inscrever nas campanhas e eventos através do nosso site ou entrando em contato
+                            conosco.
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 4 -->
+                    <div class="faq-item bg-green-800 rounded-xl shadow-md p-5 reveal reveal-up delay-800">
+                        <button
+                            class="faq-question w-full text-left flex justify-between items-center font-semibold text-green-200 focus:outline-none">
+                            Quais itens posso doar?
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 text-green-100 mt-2">
+                            Aceitamos itens eletrônicos, roupas, livros, materiais de escritório e qualquer produto em
+                            bom estado que possa ser reutilizado.
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 5 -->
+                    <div class="faq-item bg-green-800 rounded-xl shadow-md p-5 reveal reveal-up delay-1000">
+                        <button
+                            class="faq-question w-full text-left flex justify-between items-center font-semibold text-green-200 focus:outline-none">
+                            Como faço para acompanhar minha doação ou pedido?
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 text-green-100 mt-2">
+                            Você receberá notificações por e-mail sobre o status da sua doação ou aquisição, além de
+                            poder acompanhar diretamente no painel do site.
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 6 -->
+                    <div class="faq-item bg-green-800 rounded-xl shadow-md p-5 reveal reveal-up delay-1200">
+                        <button
+                            class="faq-question w-full text-left flex justify-between items-center font-semibold text-green-200 focus:outline-none">
+                            Existe algum custo para doar ou adquirir produtos?
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 text-green-100 mt-2">
+                            As doações são gratuitas. Alguns produtos reciclados podem ter custo simbólico ou valor de
+                            envio, que será informado antes da finalização do pedido.
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 7 -->
+                    <div class="faq-item bg-green-800 rounded-xl shadow-md p-5 reveal reveal-up delay-1400">
+                        <button
+                            class="faq-question w-full text-left flex justify-between items-center font-semibold text-green-200 focus:outline-none">
+                            Posso cancelar uma doação ou pedido?
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 text-green-100 mt-2">
+                            Sim, desde que ainda não tenha sido processada. Entre em contato conosco para solicitar o
+                            cancelamento.
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 8 -->
+                    <div class="faq-item bg-green-800 rounded-xl shadow-md p-5 reveal reveal-up delay-1600">
+                        <button
+                            class="faq-question w-full text-left flex justify-between items-center font-semibold text-green-200 focus:outline-none">
+                            Os dados pessoais estão seguros no site?
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 text-green-100 mt-2">
+                            Sim, utilizamos criptografia e boas práticas de segurança para proteger seus dados pessoais
+                            e informações de pagamento.
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 9 -->
+                    <div class="faq-item bg-green-800 rounded-xl shadow-md p-5 reveal reveal-up delay-1800">
+                        <button
+                            class="faq-question w-full text-left flex justify-between items-center font-semibold text-green-200 focus:outline-none">
+                            Como posso entrar em contato com a equipe ReciclaTech?
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 text-green-100 mt-2">
+                            Você pode enviar uma mensagem pelo WhatsApp, formulário de contato no site ou e-mail: <a
+                                href="mailto:contato@reciclatech.com"
+                                class="underline text-green-300">contato@reciclatech.com</a>.
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 10 -->
+                    <div class="faq-item bg-green-800 rounded-xl shadow-md p-5 reveal reveal-up delay-2000">
+                        <button
+                            class="faq-question w-full text-left flex justify-between items-center font-semibold text-green-200 focus:outline-none">
+                            Posso sugerir melhorias ou novas funcionalidades?
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 text-green-100 mt-2">
+                            Claro! Envie suas sugestões pelo formulário de contato ou WhatsApp. A equipe da ReciclaTech
+                            aprecia feedbacks para melhorar o site.
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 11 -->
+                    <div class="faq-item bg-green-800 rounded-xl shadow-md p-5 reveal reveal-up delay-2200">
+                        <button
+                            class="faq-question w-full text-left flex justify-between items-center font-semibold text-green-200 focus:outline-none">
+                            Os produtos reciclados são de qualidade?
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 text-green-100 mt-2">
+                            Sim, todos os produtos passam por avaliação e limpeza antes de serem disponibilizados,
+                            garantindo qualidade e segurança.
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 12 -->
+                    <div class="faq-item bg-green-800 rounded-xl shadow-md p-5 reveal reveal-up delay-2400">
+                        <button
+                            class="faq-question w-full text-left flex justify-between items-center font-semibold text-green-200 focus:outline-none">
+                            Como são calculadas as taxas de envio?
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 text-green-100 mt-2">
+                            O custo do envio depende do tipo de produto, quantidade e região. Será informado antes da
+                            confirmação do pedido.
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 13 -->
+                    <div class="faq-item bg-green-800 rounded-xl shadow-md p-5 reveal reveal-up delay-2600">
+                        <button
+                            class="faq-question w-full text-left flex justify-between items-center font-semibold text-green-200 focus:outline-none">
+                            É possível acompanhar o impacto ambiental das doações?
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 text-green-100 mt-2">
+                            Sim! Em breve teremos dashboards mostrando quantos itens foram reciclados e o impacto
+                            positivo gerado.
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 14 -->
+                    <div class="faq-item bg-green-800 rounded-xl shadow-md p-5 reveal reveal-up delay-2800">
+                        <button
+                            class="faq-question w-full text-left flex justify-between items-center font-semibold text-green-200 focus:outline-none">
+                            Posso criar uma conta para acompanhar minhas ações?
+                            <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 text-green-100 mt-2">
+                            Sim! Em breve lançaremos uma área de login onde você poderá acompanhar doações, pedidos e
+                            histórico de participação.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <!-- Rodapé -->
-    <footer class="bg-gray-800 text-white w-full px-10 items-center">
+    <footer class="color-2 bg-green-900 text-white w-full px-10 items-center">
         <div class="flex justify-between py-10 flex-col md:flex-row items-center gap-2">
             <!-- Sobre -->
             <div class="flex flex-col">
-                <a href="" class="text-2xl flex items-center gap-2 font-bold"><i
+                <a href="#" class="text-2xl flex items-center gap-2 font-bold"><i
                         class="fa-solid fa-recycle text-green-500"></i>ReciclaTech</a>
                 <p class="text-green-500">
                     Conectando pessoas
@@ -392,10 +671,10 @@
             <div class="flex flex-col items-center gap-2">
                 <h1 class="text-xl font-bold">Links rápidos</h1>
                 <div class="flex flex-col items-center text-gray-400">
-                    <a href="" class="hover:text-green-600 transition">Como funciona</a>
-                    <a href="" class="hover:text-green-600 transition">Doar</a>
-                    <a href="" class="hover:text-green-600 transition">Adquirir</a>
-                    <a href="" class="hover:text-green-600 transition">Contato</a>
+                    <a href="#comoFunciona" class="hover:text-green-600 transition">Como funciona</a>
+                    <a href="#contato" class="hover:text-green-600 transition">Contato</a>
+                    <a href="#produtos" class="hover:text-green-600 transition">Adquirir</a>
+                    <a href="#sobre" class="hover:text-green-600 transition">Sobre nós</a>
                 </div>
             </div>
 
@@ -403,10 +682,10 @@
             <div class="flex flex-col items-center gap-2">
                 <h1 class="text-xl font-bold">Suporte</h1>
                 <div class="flex flex-col items-center text-gray-400">
-                    <a href="" class="hover:text-green-600 transition">FAQ</a>
-                    <a href="" class="hover:text-green-600 transition">Termos de uso</a>
-                    <a href="" class="hover:text-green-600 transition">Privacidade</a>
-                    <a href="" class="hover:text-green-600 transition">Ajuda</a>
+                    <a href="#faq" class="hover:text-green-600 transition">FAQ</a>
+                    <a href="#" id="linkTermos" class="hover:text-green-600 transition">Termos de uso</a>
+                    <a href="#" id="linkPrivacidade" class="hover:text-green-600 transition">Privacidade</a>
+                    <a href="#contato" class="hover:text-green-600 transition">Ajuda</a>
                 </div>
             </div>
 
@@ -423,41 +702,257 @@
                     </p>
                 </div>
                 <div class="flex items-center justify-between gap-2">
-                    <a href="" class="hover:text-green-600 transition"><i
+                    <a href="https://www.facebook.com" target="_blank" class="hover:text-green-600 transition"><i
                             class="fa-brands fa-facebook text-blue-500 hover:text-blue-600 transition text-3xl"></i></a>
-                    <a href="" class="hover:text-green-600 transition"><i
+                    <a href="https://www.instagram.com/bry.codes" class="hover:text-green-600 transition"
+                        target="_blank"><i
                             class="fa-brands fa-instagram text-3xl text-pink-500 transition hover:text-pink-600"></i></a>
-                    <a href="" class="hover:text-green-600 transition"><i
+                    <a href="https://x.com" target="_blank" class="hover:text-green-600 transition"><i
                             class="fa-brands fa-twitter text-3xl hover:text-blue-500 transition text-blue-400"></i></a>
                 </div>
             </div>
 
             <div class="flex flex-col items-center gap-2">
-                <a href="">
-                    <img src="https://logodownload.org/wp-content/uploads/2018/03/reclame-aqui-logo.png" alt=""
-                        class="w-20">
+                <a href="https://www.reclameaqui.com.br" target="_blank">
+                    <img src="https://logodownload.org/wp-content/uploads/2018/03/reclame-aqui-logo.png"
+                        alt="reclameaqui" title="Reclame Aqui" class="w-20">
                 </a>
                 <img src="https://png.pngtree.com/png-vector/20241023/ourmid/pngtree-green-secure-ssl-encryption-sign-with-padlock-shield-for-website-security-vector-png-image_14129608.png"
-                    alt="" class="w-20">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
-                    class="w-20" alt="">
+                    alt="Site protegido" title="Site Protegido" class="w-20">
+                <a href="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwjpo_Grh7SQAxVYLLkGHfUnIf8QPAgJ&zx=1761007293480&no_sw_cr=1"
+                    target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
+                        class="w-20" alt="google" title="Google">
+                </a>
             </div>
         </div>
         <hr>
         <div class="flex justify-center py-2 items-center text-center flex-col">
             <p>&copy; 2025
                 ReciclaTech. Todos os direitos reservados.</p>
-            <a href="https://github.com/Bryan-M-Almeida" target="_blank"
+            <a href="https://github.com/Bryan-M-Almeida/reciclaTech" target="_blank"
                 class="flex items-center gap-2 hover:text-blue-500 transition">Site feito por Bryan Maciel</a>
-            <a href="https://github.com/Bryan-M-Almeida" target="_blank" class="hover:text-black transition"><i
-                    class="fa-brands fa-github text-4xl"></i></a>
+            <a href="https://github.com/Bryan-M-Almeida/reciclaTech" target="_blank"
+                class="hover:text-black transition"><i class="fa-brands fa-github text-4xl"></i></a>
         </div>
     </footer>
 
     <!-- Whatsapp ícone -->
     <div class="fixed bottom-10 right-10 bg-green-500 rounded-full py-2 px-3 shadow-gray-900 z-50 shadow-md">
-        <a href="" class="hover:text-gray-300 transition duration-300"><i
+        <a href="https://wa.me/5522997805082/?text=Ol%C3%A1%2C%20vi%20seu%20site%20ReciclaTech%20e%20quero%20mais%20informa%C3%A7%C3%B5es%21"
+            class="hover:text-gray-300 transition duration-300" target="_blank"><i
                 class="text-6xl  fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <!-- COOKIES -->
+    <div id="cookie-banner"
+        class="fixed bottom-5 left-5 right-5 md:left-auto md:right-5 bg-green-900 text-white p-5 rounded-xl shadow-lg flex flex-col md:flex-row items-center justify-between gap-4 z-50 transition-all duration-500 color-2">
+        <p class="text-sm md:text-base">
+            Usamos cookies para melhorar sua experiência no site da <span
+                class="text-green-400 font-semibold">ReciclaTech</span>.
+            Leia nossa <a href="#cookies" class="underline text-green-300 hover:text-green-200">política de cookies</a>.
+        </p>
+        <div class="flex gap-3">
+            <button id="configCookies"
+                class="bg-green-600 hover:bg-green-500 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-300">
+                Configurar
+            </button>
+            <button id="acceptCookies"
+                class="bg-green-500 hover:bg-green-400 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-300">
+                Aceitar
+            </button>
+        </div>
+    </div>
+
+    <!-- MODAL DE CONFIGURAÇÃO -->
+    <div id="cookie-modal"
+        class="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 hidden">
+        <div class="bg-green-900  color-2 text-white p-8 rounded-2xl shadow-2xl w-11/12 md:w-[500px] relative">
+            <h2 class="text-2xl font-bold text-green-400 mb-4">Preferências de Cookies</h2>
+            <p class="text-sm mb-6 text-green-100">Selecione quais tipos de cookies deseja permitir. Você pode alterar
+                isso a qualquer momento.</p>
+
+            <div class="flex flex-col gap-3 text-sm">
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" checked disabled class="accent-green-500 cursor-not-allowed">
+                    <span>Essenciais (necessários para o funcionamento do site)</span>
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" id="analiticos" class="accent-green-500">
+                    <span>Analíticos (ajudam a entender o uso do site)</span>
+                </label>
+                <label class="flex items-center gap-2">
+                    <input type="checkbox" id="marketing" class="accent-green-500">
+                    <span>Marketing (personalização e anúncios relevantes)</span>
+                </label>
+            </div>
+
+            <div class="flex justify-end gap-3 mt-6">
+                <button id="cancelConfig"
+                    class="px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 transition">Cancelar</button>
+                <button id="saveConfig"
+                    class="px-4 py-2 rounded-lg bg-green-500 hover:bg-green-400 transition">Salvar</button>
+            </div>
+
+            <button id="closeModal"
+                class="absolute top-3 right-3 text-green-300 hover:text-green-100 text-xl">×</button>
+        </div>
+    </div>
+
+    <!-- POLÍTICA DE COOKIES POPUP -->
+    <div id="politica-cookies"
+        class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[60] hidden">
+        <div
+            class="bg-green-900 color-2 text-white p-8 rounded-2xl shadow-2xl w-11/12 md:w-[700px] h-[80vh] overflow-y-auto relative">
+            <h2 class="text-3xl font-bold text-green-400 mb-4">Política de Cookies – ReciclaTech</h2>
+
+            <p class="mb-3 text-green-100 text-sm">
+                <strong>1. Introdução:</strong> Na ReciclaTech, valorizamos sua privacidade. Usamos cookies para
+                melhorar a experiência do usuário, analisar o uso do site e oferecer conteúdo relevante.
+            </p>
+            <p class="mb-3 text-green-100 text-sm">
+                <strong>2. O que são cookies:</strong> Cookies são pequenos arquivos armazenados no seu navegador que
+                ajudam a lembrar suas preferências, login e navegação.
+            </p>
+            <p class="mb-3 text-green-100 text-sm">
+                <strong>3. Tipos de cookies:</strong>
+            </p>
+
+            <ul class="mb-3 text-green-100 text-sm">
+                <li>Essenciais – necessários para o funcionamento do site.</li>
+                <li>Analíticos – ajudam a entender como você usa o site.</li>
+                <li>Marketing – usados para personalizar anúncios e recomendações.</li>
+                <li>Funcionais – lembram suas preferências, idioma e configurações.</li>
+            </ul>
+            <p class="mb-3 text-green-100 text-sm">
+                <strong>4. Como usamos:</strong> Utilizamos cookies para garantir que o site funcione corretamente e
+                para melhorar continuamente nossos serviços.
+            </p>
+            <p class="mb-3 text-green-100 text-sm">
+                <strong>5. Gerenciamento:</strong> Você pode aceitar, recusar ou configurar os cookies a qualquer
+                momento. Basta ajustar suas preferências no banner ou nas configurações do navegador.
+            </p>
+            <p class="mb-3 text-green-100 text-sm">
+                <strong>6. Atualizações:</strong> Esta política pode ser atualizada periodicamente. Última atualização:
+                <span class="text-green-300 font-semibold">20 de outubro de 2025</span>.
+            </p>
+            <p class="mb-3 text-green-100 text-sm">
+                <strong>7. Contato:</strong> Em caso de dúvidas, entre em contato:
+                <a href="mailto:contato@reciclatech.com"
+                    class="underline text-green-300 hover:text-green-200">contato@reciclatech.com</a>
+            </p>
+
+            <button id="closePolitica"
+                class="absolute top-3 right-3 text-green-300 hover:text-green-100 text-xl">×</button>
+        </div>
+    </div>
+
+    <!-- Modal Termos de Uso -->
+    <div id="modalTermos"
+        class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 hidden">
+        <div
+            class="bg-green-900 color-2 text-white p-8 rounded-2xl shadow-2xl w-11/12 md:w-[700px] max-h-[80vh] overflow-y-auto relative">
+            <h2 class="text-2xl font-bold text-green-400 mb-4">Termos de Uso</h2>
+            <p class="text-green-100 mb-3">
+                Bem-vindo ao ReciclaTech!<br>
+                Ao acessar e utilizar nosso site e serviços, você concorda com estes Termos de Uso.
+            </p>
+
+            <h3 class="text-green-300 font-semibold mb-2">1. Uso do site:</h3>
+            <p class="text-green-100 mb-3">
+                Você concorda em usar o site apenas para fins legais e de acordo com as normas aqui descritas. É
+                proibido compartilhar conteúdo ilegal, ofensivo ou que viole direitos de terceiros.
+            </p>
+
+            <h3 class="text-green-300 font-semibold mb-2">2. Conteúdo:</h3>
+            <p class="text-green-100 mb-3">
+                Todos os textos, imagens e informações disponíveis no site são de propriedade da ReciclaTech ou de
+                parceiros autorizados. A reprodução sem permissão é proibida.
+            </p>
+
+            <h3 class="text-green-300 font-semibold mb-2">3. Responsabilidades do usuário:</h3>
+            <p class="text-green-100 mb-3">
+                O usuário é responsável pelo conteúdo que fornece ao site, incluindo doações, comentários e informações
+                pessoais.
+            </p>
+
+            <h3 class="text-green-300 font-semibold mb-2">4. Limitação de responsabilidade:</h3>
+            <p class="text-green-100 mb-3">
+                A ReciclaTech não se responsabiliza por perdas, danos ou problemas decorrentes do uso do site, doações
+                ou aquisições realizadas.
+            </p>
+
+            <h3 class="text-green-300 font-semibold mb-2">5. Alterações:</h3>
+            <p class="text-green-100 mb-3">
+                A ReciclaTech pode alterar estes Termos de Uso a qualquer momento, sendo válida a versão publicada no
+                site.
+            </p>
+
+            <p class="text-green-100 mt-4">
+                Ao continuar usando nossos serviços, você confirma que leu, compreendeu e concorda com estes Termos de
+                Uso.
+            </p>
+
+            <button id="closeTermos"
+                class="absolute top-3 right-3 text-green-300 hover:text-green-100 text-xl">×</button>
+        </div>
+    </div>
+
+    <!-- Modal Privacidade -->
+    <div id="modalPrivacidade"
+        class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 hidden">
+        <div
+            class="bg-green-900 color-2 text-white p-8 rounded-2xl shadow-2xl w-11/12 md:w-[700px] max-h-[80vh] overflow-y-auto relative">
+            <h2 class="text-2xl font-bold text-green-400 mb-4">Política de Privacidade</h2>
+            <p class="text-green-100 mb-3">
+                A sua privacidade é importante para a ReciclaTech. Esta política explica como coletamos, usamos e
+                protegemos suas informações.
+            </p>
+
+            <h3 class="text-green-300 font-semibold mb-2">1. Informações coletadas:</h3>
+            <p class="text-green-100 mb-3">
+                Podemos coletar dados como nome, e-mail, telefone e informações sobre doações ou aquisições realizadas
+                no site.
+            </p>
+
+            <h3 class="text-green-300 font-semibold mb-2">2. Uso das informações:</h3>
+            <p class="text-green-100 mb-3">
+                Os dados coletados são utilizados apenas para gerenciar doações, compras, contato com usuários e
+                melhoria dos serviços.
+            </p>
+
+            <h3 class="text-green-300 font-semibold mb-2">3. Cookies:</h3>
+            <p class="text-green-100 mb-3">
+                Usamos cookies para melhorar a experiência do usuário, analisar o uso do site e personalizar conteúdo.
+                Você pode gerenciar suas preferências a qualquer momento.
+            </p>
+
+            <h3 class="text-green-300 font-semibold mb-2">4. Compartilhamento de dados:</h3>
+            <p class="text-green-100 mb-3">
+                Não compartilhamos informações pessoais com terceiros sem seu consentimento, exceto quando exigido por
+                lei ou para processar serviços solicitados.
+            </p>
+
+            <h3 class="text-green-300 font-semibold mb-2">5. Segurança:</h3>
+            <p class="text-green-100 mb-3">
+                Implementamos medidas de proteção de dados, mas não podemos garantir segurança absoluta.
+            </p>
+
+            <h3 class="text-green-300 font-semibold mb-2">6. Alterações na política:</h3>
+            <p class="text-green-100 mb-3">
+                Esta política pode ser atualizada. A versão vigente sempre estará publicada no site.
+            </p>
+
+            <h3 class="text-green-300 font-semibold mb-2">7. Contato:</h3>
+            <p class="text-green-100 mb-3">
+                Para dúvidas ou solicitações sobre seus dados, entre em contato: <a
+                    href="mailto:contato@reciclatech.com"
+                    class="underline text-green-300 hover:text-green-200">contato@reciclatech.com</a>
+            </p>
+
+            <button id="closePrivacidade"
+                class="absolute top-3 right-3 text-green-300 hover:text-green-100 text-xl">×</button>
+        </div>
     </div>
 
     <!-- Scripts -->

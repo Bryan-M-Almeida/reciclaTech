@@ -8,7 +8,7 @@ async function carregarProdutos() {
         secao.className = "w-full"
 
         const titulo = document.createElement("h2")
-        titulo.className = "text-3xl font-semibold mb-6 text-center capitalize"
+        titulo.className = "text-3xl font-semibold mb-6 text-center capitalize text-white"
         titulo.textContent = categoria
 
         const swiperContainer = document.createElement("div")

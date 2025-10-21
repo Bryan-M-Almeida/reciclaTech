@@ -4,22 +4,62 @@
   scroll-padding: 50px;
 }
 
-.darkMode {
-  background-color: black;
-}
-
-body.darkMode #dados {
+label {
   color: white;
 }
 
-body.darkMode #produtos,
-body.darkMode #depoimentos,
-body.darkMode #contato,
-body.darkMode #hero {
-  background-color: #111827;
-  color: white;
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-select, body.darkMode select {
-  color: black;
+@keyframes slide-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide {
+  display: flex;
+  animation: slide 35s linear infinite;
+}
+
+.animate-slide-reverse {
+  display: flex;
+  animation: slide-reverse 35s linear infinite;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1);
+  filter: blur(10px);
+}
+
+.reveal.visible {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.reveal-left {
+  transform: translateX(-60px);
+}
+
+.reveal-zoom {
+  transform: scale(0.9);
+}
+
+.reveal.visible.reveal-left,
+.reveal.visible.reveal-zoom {
+  transform: none;
 }
