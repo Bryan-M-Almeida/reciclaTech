@@ -359,5 +359,3 @@ window.addEventListener('click', e => {
     if (e.target === cookieModal) cookieModal.classList.add('hidden');
     if (e.target === politicaPopup) politicaPopup.classList.add('hidden');
 });
-
-localStorage.clear();

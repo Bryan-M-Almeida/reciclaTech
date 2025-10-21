@@ -1,3 +1,4 @@
+/* Reset */
 * {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
@@ -8,6 +9,7 @@ label {
   color: white;
 }
 
+/* Animações */
 @keyframes slide {
   0% {
     transform: translateX(0);
@@ -28,6 +30,7 @@ label {
   }
 }
 
+/* Animações personalizadas */
 .animate-slide {
   display: flex;
   animation: slide 35s linear infinite;
